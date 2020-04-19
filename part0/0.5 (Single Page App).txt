@@ -1,0 +1,42 @@
+title 0.5 (Single Page App)
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+
+note over browser
+A GET Request is sent
+to the server
+end note
+
+server-->browser: HTML DOCUMENT
+
+note over server
+Server responses by giving
+HTML Document
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+
+note over browser
+HTML Document needs 
+additional resources 
+such as CSS and JS
+Which it will also
+request to the server
+using GET Request
+end note 
+
+server-->browser: main.css
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+
+server-->browser: spa.js
+
+browser-> server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+
+server-->browser: data.json
+
+note over browser
+JSON data is displayed
+by the JS event handler
+end note 
+

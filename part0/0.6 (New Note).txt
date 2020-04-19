@@ -1,0 +1,26 @@
+title 0.6 (New Note)
+
+note over browser
+Submit button in the form
+is pressed
+end note
+
+note over browser
+There is no redirect due to the 
+code in JS 'e.preventDefault()'
+end note
+
+note over browser
+The DOM is manipulated
+using JS and the text
+from the form is displayed
+in the notes without refresh
+using redrawNotes function
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over browser
+The data is then sent over 
+to the server
+end note
